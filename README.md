@@ -21,3 +21,53 @@ The purpose of this project is to understand how basic image transformation oper
 - OpenCV
 - NumPy
 - Matplotlib (optional for visualization)
+
+
+
+## 🔄 Transformations Explained
+
+### ✅ Cropping
+Extract a region of interest from the image.
+
+```python
+cropped_img = image[y:y+h, x:x+w]
+```
+
+---
+
+### ✅ Affine Transformation
+Apply rotation, translation, or scaling to the image using an affine matrix.
+
+```python
+cv2.warpAffine(image, matrix, (width, height))
+```
+
+---
+
+### ✅ Grayscale Conversion
+Convert the image from RGB to grayscale.
+
+```python
+gray_img = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+```
+
+---
+
+### ✅ Log Transformation
+Enhance details in darker areas by applying logarithmic scaling.
+
+```python
+log_img = c * np.log1p(gray_img)
+```
+
+---
+
+### ✅ Gamma Correction
+Adjust image brightness non-linearly.
+
+```python
+gamma_corrected = np.power(image / 255.0, gamma) * 255
+```
+
+---
+
