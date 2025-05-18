@@ -70,4 +70,5 @@ gamma_corrected = np.power(image / 255.0, gamma) * 255
 ```
 
 ---
-
+### CONCLUSION
+This project provides a hands-on understanding of basic image processing techniques using Python and OpenCV. By applying transformations such as cropping, affine changes, grayscale conversion, log transformation, and gamma correction, users gain insight into how these methods affect visual data. This foundational knowledge is essential for further exploration in computer vision, machine learning, and digital image analysis.
